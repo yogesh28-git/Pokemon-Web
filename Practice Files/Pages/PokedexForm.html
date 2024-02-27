@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex register</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Hey fellow traveller, did you spot any new pokemon not registered on Professor Oak's Pokedex?</p>
+            <p>You can contribute to professor's research by filling this form.</p><br><br>
+        </section>
+
+        <section>
+            <form action="submit" method="post">
+                <table>
+                    <tr>
+                        <td><label for="username">User Email Id</label></td>
+                        <td><input id="userName" type="email" name="userName" placeholder="abc@d.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input id="password" type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pokemonName">Pokemon Name <br>(The name you have decided)</label></td>
+                        <td><input id="pokemonName" type="text" name="pokemonName" placeholder="Enter Name Here"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Pokemon Type:</label></td>
+                        <td><label for="fire">Fire</label>
+                            <input id="fire" name="type" type="checkbox" value="fire">&nbsp;&nbsp;
+                            <label for="water">Water</label>
+                            <input id="water" name="type" type="checkbox" value="water">&nbsp;&nbsp;
+                            <label for="grass">Grass</label>
+                            <input id="grass" name="type" type="checkbox" value="grass">&nbsp;&nbsp;
+                            <label for="ground">Ground</label>
+                            <input id="ground" type="checkbox" value="ground">&nbsp;&nbsp;
+                            <label for="electric">Electric</label>
+                            <input id="electric" name="type" type="checkbox" value="electric">&nbsp;&nbsp;
+                            <label for="poison">Poison</label>
+                            <input id="water" name="type" type="checkbox" value="poison">&nbsp;&nbsp;
+                            <label for="water">Ice</label>
+                            <input id="water" name="type" type="checkbox" value="ice">&nbsp;&nbsp;
+                            <label for="ghost">Ghost</label>
+                            <input id="ghost" name="type" type="checkbox" value="ghost">&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender of the pokemon you found:</label></td>
+                        <td><label for="male"><img src="../Images/male.png" height="25px"></label>
+                            <input id="male" type="radio" name="gender" value="male">&nbsp;&nbsp;
+                            <label for="female"><img src="../Images/female.png" height="25px"></label>
+                            <input id="female" type="radio" name="gender" value="female">&nbsp;&nbsp;
+                            <label for="genderless"><img src="../Images/genderless.png" height="25px"></label>
+                            <input id="genderless" type="radio" name="gender" value="genderless">&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="abilities">Abilities</label></td>
+                        <td><textarea id="abilities" name="abilities" rows="5" cols="33"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pokemonImage">Upload an Image(if you clicked an image of the pokemon)</label>
+                        </td>
+                        <td><input id="pokemonImage" type="file" name="pokemonImage"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><input name="submit" type="submit" value="Submit"></th>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
